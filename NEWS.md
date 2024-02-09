@@ -1,3 +1,9 @@
-# HLAtools.data (development version)
+# HLAtools.data (development version) 0.5.2.9999
 
-* Initial CRAN submission.
+* Version 0.5.2.9999 February 7, 2024
+    Added Vignette. 
+
+* Version 0.5.1.9999 February 7, 2024
+    Initial build of the HLAtools.data package
+    Package includes HLAalignments and HLAatlas objects for IPD-IMGT/HLA Database Release Version 3.55.0
+    The installed size of the HLAtools.data package is 15.9Mb.
