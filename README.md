@@ -1,6 +1,6 @@
 ## HLAtools.data: Datasets supporting the HLAtools R Package
 
-## Version 0.5.1
+## Version 0.5.2
 
 The HLAtools.data package contains the *HLAalignments* and *HLAatlas* R data objects. These objects are created and used by the HLAtools package.
 

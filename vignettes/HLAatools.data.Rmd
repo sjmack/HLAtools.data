@@ -21,7 +21,7 @@ knitr::opts_chunk$set(echo = TRUE)
 options(rmarkdown.html_vignette.check_title = FALSE)
 ```
 
--   Package Version: 0.5.1.9000
+-   Package Version: 0.5.2.9000
 
 # Overview
 
