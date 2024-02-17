@@ -1,16 +1,17 @@
-##data v1.0.0 4FEB2024
+##data v2.0.0 17FEB2024
 
 ##HLAalignments
 #'Amino acid, cDNA, or gDNA sequence alignments for the genes in the ANHIG/IMGTHLA GitHub repository.
 #'
-#'A list object of sub-lists of R dataframes of amino-acid, cDNA and gDNA sequence alignments for all of the HLA and HLA-region genes supported in the ANHIG/IMGTHLA GitHub Repository.
+#'A list object of sub-lists of R dataframes of amino-acid, codon and nucleotide (cDNA) and genomic (gDNA) sequence alignments for all of the HLA and HLA-region genes supported in the ANHIG/IMGTHLA GitHub Repository.
 #'This object is built by the alignmentFull() function in the HLAtools package.
 #' @docType data
 #' @name HLAalignments
 #' @usage data(HLAalignments)
-#' @format A large list of 4 sublists that include dataframes of amino-acid, cDNA and gDNA aligmnents.
+#' @format A large list of 5 sublists that include dataframes of amino-acid, codon, coding nucleotide and genomic aligmnents.
 #' \itemize{
 #'    \item(prot: data frames of amino-acid sequence alignments)
+#'    \item(codon: data frames of codon sequence alignments)
 #'    \item(nuc: data frames of nucleotide sequence alignments)
 #'    \item(gen: data frames of genomic sequence alignments)
 #'    \item(version: The IPD-IMGT/HLA Database release version under which these data were generated)

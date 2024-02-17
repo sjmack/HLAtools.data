@@ -8,7 +8,7 @@ author:
 - Vinh Luu -- vinhluu864@berkeley.edu
 - Josh Bredeweg
 - Steven J. Mack, PhD -- steven.mack@ucsf.edu
-date: "2024-02-08"
+date: "2024-02-16"
 output: rmarkdown::html_vignette
 vignette: >
   %\VignetteIndexEntry{Using HLAtools.data}
@@ -21,7 +21,7 @@ knitr::opts_chunk$set(echo = TRUE)
 options(rmarkdown.html_vignette.check_title = FALSE)
 ```
 
--   Package Version: 0.5.2.9000
+-   Package Version: 0.6.0.9000
 
 # Overview
 
@@ -42,14 +42,24 @@ Table 1. Headers and Amino Acid Resideue Position Numbering in the HLA-A Nucleot
 |:-----:|:----------:|:------------:|:-------------:|:-:|:---:|:---:|:-:|:---:|:---:|
 |A|01:01:01:01|A*01:01|A*01:01:01:01|M|A|V|M|A|P|
 
-#### Nucleotide (cDNA) Sequence Alignments
-The column heads for the *nuc* alignments identify the individual nucleotide positions within each codon, starting with the first codon. As shown in Table 2, the HLA-A *nuc* alignment begins at the first nucleotide in codon position -24, which is identified as *-24*; the second nucleotide in codon -24 is identified as *-24.1* and the third nucleotide in codon -24 is identified as *-24.2*. 
+#### Codon and Individual Nucleotide (cDNA) Sequence Alignments
+Both codon-triplet (*codon*) and individual nucleotide (*nuc*) alignments are included as separate data frames. 
 
-Table 2. Headers and Codon Position Numbering in the HLA-A Nucleotide Alignment
+The column heads for the *codon* alignments identify the individual nucleotide positions within each codon, starting with the first codon. As shown in Table 2a, the HLA-A *codon* alignment begins at the first nucleotide in codon position -24, which is identified as *-24*; the second nucleotide in codon -24 is identified as *-24.1* and the third nucleotide in codon -24 is identified as *-24.2*. 
+
+Table 2a. Headers and Codon Position Numbering in the HLA-A Codon Nucleotide Alignment
 
 |locus  |allele      |trimmed_allele|allele_name    |-24|-24.1|-24.2|-23|-23.1|-23.2|
 |:-----:|:----------:|:------------:|:-------------:|:-:|:---:|:---:|:-:|:---:|:---:|
 |A      |01:01:01:01 |  A\*01:01    | A\*01:01:01:01| A | T   | G   | G | C   | C   |
+
+The column heads for the *nuc* aligmnents identify each individual nucleotide position, starting from the first transcribed nucleotide (1), as shown in Table 2b. 
+
+Table 2b. Headers and Nucleotide Position numbering in the HLA-A Individual Nucleotide Alignment
+
+|locus  |allele      |trimmed_allele|allele_name    |1|2|3|4|5|6|
+|:-----:|:----------:|:------------:|:-------------:|:---:|:---:|:---:|:---:|:---:|:---:
+|A      |01:01:01:01 |A\*01:01      |A\*01:01:01:01 |A|T|G|G|C|C|
 
 #### Genomic (gDNA) Sequence Alignments
 The column heads for the *gen* alignments identify the individual nucleotide positions in the 'full gene' sequence, which usually starts in the 5' untranslated region (UTR) sequence for expressed genes 
